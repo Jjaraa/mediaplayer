@@ -1,25 +1,7 @@
-function MediaPlayer(config) {
-    this.media = config.el;
-  }
+import MediaPlayer from './MediaPlayer.js';
 
-  MediaPlayer.prototype.play = function() {
-    this.media.play();
-  };
+const video = document.querySelector("video");
+const player = new MediaPlayer({ el: video });
 
-  MediaPlayer.prototype.pause = function() {
-    this.media.pause();
-  };
-
-  MediaPlayer.prototype.togglePlay = function() {
-    if (this.media.paused) {
-      this.play();
-    } else {
-      this.pause();
-    }
-  };
-
-  const video = document.querySelector('video');
-  const player = new MediaPlayer({ el: video });
-
-  const button = document.querySelector('button');
-  button.onclick = () => player.togglePlay();
+const button = document.querySelector("button");
+button.onclick = () => player.togglePlay();
