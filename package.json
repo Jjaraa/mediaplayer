@@ -5,16 +5,15 @@
   "license": "MIT",
   "author": "Jonathan I. Jara Assmann <j.jarassmann@gmail.com>",
   "scripts": {
-    "start": "live-server"
+    "start": "parcel index.html"
   },
   "devDependencies": {
-    "live-server": "^1.2.1",
     "parcel-bundler": "^1.12.5",
     "standard": "16.0.4"
   },
   "eslintConfig": {
     "extends": "standard",
-    "env":{
+    "env": {
       "browser": true,
       "node": true,
       "es6": true
