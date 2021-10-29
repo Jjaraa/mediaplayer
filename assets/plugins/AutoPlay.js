@@ -1,14 +1,14 @@
-function AutoPlay() {}
+function AutoPlay () {}
 
 AutoPlay.prototype.run = function (player) {
-  if(!player.muted) {
-    player.muted = true;
+  if (!player.muted) {
+    player.muted = true
   }
-  player.play();
-};
-
-AutoPlay.alterMute = function (player) {
-  player.alterMute();  
+  player.play()
 }
 
-export default AutoPlay;
+AutoPlay.alterMute = function (player) {
+  player.alterMute()
+}
+
+export default AutoPlay
